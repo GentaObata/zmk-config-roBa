@@ -21,6 +21,11 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <20 19 19 20>;
+        };
     };
 
     macros {
@@ -49,7 +54,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E    &kp R    &kp T                                                             &kp Y                &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D    &lt 1 F  &kp G                    &kp ESCAPE                  &kp MINUS    &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A             &kp S         &kp D    &lt 1 F  &kp G                    &to_layer_0 ESCAPE          &kp MINUS    &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C    &kp V    &lt 6 B                  &kp TAB                     &kp SQT      &kp N                &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_ALT  &kp TAB  &mo 2    &mt LEFT_WIN LANGUAGE_2  &lt_to_layer_0 3 SPACE      &lt 7 ENTER  &mt RIGHT_WIN LANG1                             &kp BACKSPACE
             >;
