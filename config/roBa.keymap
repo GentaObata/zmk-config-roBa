@@ -23,8 +23,8 @@
         };
 
         backspace {
-            bindings = <&kp TAB>;
-            key-positions = <20 19 19 20>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
         };
     };
 
