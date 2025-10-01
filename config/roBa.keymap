@@ -46,6 +46,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        mt_to_layer_0: mt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TO_LAYER_0";
+            bindings = <&kp>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -53,10 +62,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E    &kp R    &kp T                                                             &kp Y                &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D    &lt 1 F  &kp G                    &to_layer_0 ESCAPE          &kp MINUS    &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V    &lt 6 B                  &kp BACKSPACE               &kp SQT      &kp N                &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp TAB  &mo 2    &mt LEFT_WIN LANGUAGE_2  &lt_to_layer_0 3 SPACE      &lt 7 ENTER  &mt RIGHT_WIN LANG1                             &kp BACKSPACE
+&kp Q             &kp W         &kp E    &kp R    &kp T                                                                        &kp Y                           &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D    &lt 1 F  &kp G                               &to_layer_0 ESCAPE          &kp MINUS    &kp H                           &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V    &lt 6 B                             &kp BACKSPACE               &kp SQT      &kp N                           &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp TAB  &mo 2    &mt_to_layer_0 LEFT_WIN LANGUAGE_2  &lt_to_layer_0 3 SPACE      &lt 7 ENTER  &mt_to_layer_0 RIGHT_WIN LANG1                             &kp BACKSPACE
             >;
         };
 
